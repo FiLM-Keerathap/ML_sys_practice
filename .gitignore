@@ -1,0 +1,3 @@
+Stucture\Docker\Dockerfile.base
+Stucture\src\configs\settings.yaml
+Stucture\src\configs\hyperparameter_tuning.yaml
