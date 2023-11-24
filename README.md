@@ -3,10 +3,10 @@
 
 ```
  
-## [Strure data](Stucture)
+## [Structured Data](Structured_Data)
 🔜 in progress
 
-## [Conputer Vision (CV)](CV)
+## [Computer Vision](Computer_Vision)
 ⏳ Coming soon
 
 ## [NLP](NLP)
