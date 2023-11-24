@@ -1,0 +1,67 @@
+default:
+  default_hyper_params:
+    - name: task
+      type: string
+      value: train
+    - name: objective
+      type: string
+      value: quantile
+    - name: num_iterations
+      type: integer
+      value: 500
+    - name: boost_from_average
+      type: boolean
+      value: False
+    - name: metric
+      type: string
+      value: mae
+  tunable_hyper_params:
+    - name: boosting_type
+      type: string
+      value:
+        - gbdt
+        - dart
+    - name: learning_rate
+      type: float
+      value:
+        min: 0.001
+        max: 0.01
+    - name: num_leaves
+      type: integer
+      value:
+        min: 10
+        max: 100
+    - name: max_depth
+      type: integer
+      value:
+        min: 15
+        max: 100
+    - name: min_data_in_leaf
+      type: integer
+      value:
+        min: 10
+        max: 200
+    - name: bagging_fraction
+      type: float
+      value:
+        min: 0.1
+        max: 1.0
+    - name: bagging_freq
+      type: integer
+      value:
+        min: 0
+        max: 10
+    - name: feature_fraction
+      type: float
+      value:
+        min: 0.1
+        max: 1.0
+    - name: alpha
+      type: float
+      value:
+        min: 0.1
+        max: 0.9
+  metric_spec:
+    mae: minimize
+  max_trial_count: 10
+  parallel_trial_count: 2

@@ -1,0 +1,17 @@
+default:
+  features_with_threshold:
+    - name: WarehouseBKey
+      threshold: 0.3
+    - name: ProductBKey
+      threshold: 0.3
+    - name: UMForecastQty
+      threshold: 0.3
+    - name: ForecastAccount
+      threshold: 0.3
+    - name: CustomerBKey
+      threshold: 0.3
+    - name: SalesExc
+      threshold: 0.3
+  target_with_threshold:
+    - name: OrderPlanningUnit
+      threshold: 0.3
