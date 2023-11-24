@@ -1,2 +1,3 @@
-Stucture\src
 Stucture\Docker\Dockerfile.base
+Stucture\src\configs
+*yaml
