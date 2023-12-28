@@ -8,6 +8,9 @@
 - [Project: NLP](#nlp) ⏳ Coming soon
 
 <!-- /TOC -->
+## Enviroment setup
+
+I develop in WSL: Ubuntu
 
 ## Dependencies
 
@@ -87,7 +90,31 @@ poetry remove numpy
 
 ### Jupyter Notebook Integration
 
-- Use [poetry-kernel](https://github.com/pathbird/poetry-kernel) for Jupyter Notebook integration with Python packages follow `pyproject.toml`.
+To integrate Poetry with Jupyter Notebook and manage Python packages effectively, consider using [poetry-kernel](https://github.com/pathbird/poetry-kernel). Follow the steps below, and choose the method that suits your workflow.
+
+#### Method 1: Select Another Kernel
+
+When running Jupyter Notebook, you can choose another kernel from `Python environments`.
+Use a kernel from the Python environment managed by Poetry
+Select the kernel named "<kernel_name>"
+
+#### Method 2: Use Poetry-Managed Kernel
+
+Create and use a new kernel managed by Poetry:
+
+```bash
+# Create a new kernel named "<kernel_name>"
+$ poetry run python -m ipykernel install --user --name=<kernel_name>
+```
+
+#### Method 3: Run Jupyter Notebook Server
+
+Start Jupyter Notebook server and connect using the provided URL:
+
+```bash
+# Run Jupyter Notebook server
+$ poetry run jupyter notebook
+```
 
 # Projects
 
