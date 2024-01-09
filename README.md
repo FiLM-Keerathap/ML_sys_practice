@@ -130,4 +130,7 @@ $ poetry run jupyter notebook
 
 ⏳ Coming soon
 
+
+credit 
+https://github.com/statmike/vertex-ai-mlops/tree/main
 ---
